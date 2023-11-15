@@ -12,7 +12,6 @@ def get_webdriver_with_url(web_url):
 
 
 if __name__ == '__main__':
-    url = "https://typeracer.com"
-    driver = get_webdriver_with_url(url)
+    driver = get_webdriver_with_url("https://typeracer.com")
     type_racer = TypeRacer(driver)
     type_racer.do_single_race()
